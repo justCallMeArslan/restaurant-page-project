@@ -1,11 +1,8 @@
 import "./style.css";
+import renderFront from "./components/frontPage";
+import toMeet from './components/toMeet';
 
-function toMeet() {
-  const content = document.querySelector('#content');
-  const mainContainer = document.createElement('div');
-  mainContainer.classList.add('bgImgToMeet');
-  content.appendChild(mainContainer);
 
-}
-
+renderFront();
 toMeet();
+

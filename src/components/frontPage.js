@@ -1,4 +1,4 @@
-export default function renderFront() {
+export function renderFront() {
   const content = document.querySelector('#content');
   const mainContainer = document.createElement('div');
   mainContainer.classList.add('bgImgToMeet');

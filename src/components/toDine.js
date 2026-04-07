@@ -11,7 +11,7 @@ export function toDine() {
     const chapParaDine = createElement("p", "text-h2-header");
     chapParaDine.textContent = "Let's Choose";
     const chapMainDine = createElement("h2", "text-h2");
-    chapMainDine.textContent = "About menu";
+    chapMainDine.textContent = "Journey";
 
     const textPara = createElement("p", "text");
     textPara.innerHTML = `At AISHOK | KAZAKH CUISINE, we invite you to immerse yourself 

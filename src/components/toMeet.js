@@ -10,7 +10,7 @@ export function toMeet() {
    const chapParaMeet = createElement("p", "text-h2-header");
    chapParaMeet.textContent = "Let's Meet";
    const chapMainMeet = createElement("h2", "text-h2");
-   chapMainMeet.textContent = "About us";
+   chapMainMeet.textContent = "Heritage";
 
    const textPara = createElement("p", "text")
    textPara.innerHTML = `

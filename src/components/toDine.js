@@ -14,22 +14,28 @@ export function toDine() {
     chapMainDine.textContent = "Journey";
 
     const textPara = createElement("p", "text");
-    textPara.innerHTML = `At AISHOK | KAZAKH CUISINE, we invite you to immerse yourself 
-    in a refined culinary journey that celebrates the rich heritage of Kazakhstan. <br>
-    Begin with the hearty elegance of our main dishes — <i>succulent</i> Beshbarmak, 
-    <i>aromatically spiced</i> Kuirdak, and <i>delicately steamed</i> Manti, each 
-    prepared using centuries-old techniques that honor the traditions of the nomadic steppe. <br>
-    Savor the distinctive flavors of our traditional dairy offerings, from the 
-    <i>subtly tart</i> Kumis and <i>crumbly, intensely flavored</i> Kurt to the 
-    <i>golden, airy</i> Baursak, perfect companions to every dish. <br>
+    textPara.innerHTML = `At <span class="highlight">AISHOK | KAZAKH CUISINE</span>, 
+    we invite you to immerse yourself in a refined culinary journey that celebrates the 
+    rich heritage of Kazakhstan. <br> Begin with the hearty elegance of our main dishes — 
+    <i>succulent</i> Beshbarmak, <i>aromatically spiced</i> Kuirdak, and <i>delicately steamed</i> 
+    Manti, each prepared using centuries-old techniques that honor the traditions 
+    of the nomadic steppe. <br> Savor the distinctive flavors of our traditional 
+    dairy offerings, from the <i>subtly tart</i> Kumis and <i>crumbly, intensely 
+    flavored</i> Kurt to the <i>golden, airy</i> Baursak, perfect companions to every dish. <br>
     Conclude with the indulgence of our desserts — <i>rich, velvety</i> Balkaymak and 
     <i>artisanal, gently spiced</i> Zhent — served alongside <i>bold, exquisitely 
     brewed</i> Kazakh Tea, a ceremonious finale that captures the warmth, sophistication, 
     and depth of Kazakh hospitality.`;
-    
+
+    const bookingBtn = createElement("button", "bookingBtn");
+    bookingBtn.textContent = "Proceed with Reservation";
+    bookingBtn.addEventListener("click", () => {
+        window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ", "_blank", "noopener,noreferrer");
+    });
+
 
     chapterDine.append(chapParaDine, chapMainDine);
-    textDine.appendChild(textPara);
+    textDine.append(textPara, bookingBtn);
 
 
     content.appendChild(mainContainerDine);

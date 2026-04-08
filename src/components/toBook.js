@@ -24,7 +24,6 @@ export function toBook() {
     })
     const mapLinkCaption = document.createElement("span");
     mapLinkCaption.textContent = "Staroměstské nám. 609/9, 110 00 Staré Město, Czechia";
-    
 
 
     textBook.append(textPara, mapLink, mapLinkCaption);

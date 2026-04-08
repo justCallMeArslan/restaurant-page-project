@@ -26,7 +26,7 @@ export function toDine() {
     <i>artisanal, gently spiced</i> Zhent — served alongside <i>bold, exquisitely 
     brewed</i> Kazakh Tea, a ceremonious finale that captures the warmth, sophistication, 
     and depth of Kazakh hospitality.`;
-
+    
 
     chapterDine.append(chapParaDine, chapMainDine);
     textDine.appendChild(textPara);

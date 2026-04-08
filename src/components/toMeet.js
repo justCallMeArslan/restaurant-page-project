@@ -15,7 +15,7 @@ export function toMeet() {
    const textPara = createElement("p", "text")
    textPara.innerHTML = `
    Welcome to <b>AISHOK | KAZAKH CUISINE</b>, a restaurant dedicated to the <i>rich 
-   traditions</i> of Kazakh cuisine, since we first opened our doors to our guests in 
+   traditions</i> of Kazakh cuisine, since we first opened our doors to the first guests in 
    <b>1969</b>.<br><br> For centuries, Kazakh food has reflected the <i>nomadic 
    lifestyle</i>, emphasizing <i>hearty meats</i>, <i>fresh dairy</i>, and simple yet 
    <i>flavorful ingredients</i> that bring families together. Every dish tells a story 

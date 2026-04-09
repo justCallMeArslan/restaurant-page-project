@@ -25,7 +25,7 @@ export function toMeet() {
    devoted to safeguarding and celebrating <i>Kazakhstan's authentic flavors</i>. 
    Drawing inspiration from treasured family recipes passed down through generations, 
    she combines meticulous, <i>centuries-old techniques</i> with a modern sensibility, 
-   ensuring every dish is both <i>genuine</i> and <i>unforgettable</i>.`; 
+   ensuring every dish is both <i>genuine</i> and <i>unforgettable</i>.`;
 
 
    chapterMeet.append(chapParaMeet, chapMainMeet);
@@ -34,4 +34,5 @@ export function toMeet() {
 
    content.appendChild(mainContainerMeet);
 
-}   
+}
+

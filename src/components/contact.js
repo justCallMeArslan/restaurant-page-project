@@ -15,8 +15,16 @@ export function contact() {
 
     const form = createElement("form");
     form.id = "contactForm";
-    form.method = "POST";
-    form.action = "/submit";
+    form.addEventListener("submit", (e) => {
+        e.preventDefault(); //stops submit behavior
+        window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ", "_blank", "noopener, noreferrer");
+
+        nameInput.value = "";
+        emailInput.value = "";
+        selector.selectedIndex = 0;
+        message.value = "";
+        alert("Oooooopsies, I'm reaallyyy reaallyyy sooooorry!! *smirking*");
+    });
 
     const nameLabel = createElement("label");
     nameLabel.htmlFor = "name";

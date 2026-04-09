@@ -39,5 +39,4 @@ export function toDine() {
 
 
     content.appendChild(mainContainerDine);
-
 }   

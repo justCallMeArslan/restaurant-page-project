@@ -4,7 +4,7 @@ export function footer() {
     const content = document.querySelector('#content');
 
     const footer = createElement("footer");
-    const footerCont = createElement("div");
+    const footerCont = createElement("div", "footerCont");
     footer.appendChild(footerCont);
 
 

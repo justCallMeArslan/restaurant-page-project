@@ -1,42 +1,35 @@
-import { createElement } from "./support.js";
+import { createElement } from "./support";
 
 export function toDine() {
     const content = document.querySelector('#content');
     const mainContainerDine = createElement("div", "main-cont");
-    const textDine = createElement("div", "text-cont")
-    const chapterDine = createElement("div", "chapter-cont");
-    mainContainerDine.append(chapterDine, textDine);
+    const mainText = createElement("div", "main-dine");
+    const bgContainer = document.createElement('div');
+    bgContainer.classList.add('bgImgDineVisit');
 
+    mainText.innerHTML = `
+    <span class="highlight">AISHOK | KAZAKH CUISINE</span><br>
+    A refined culinary journey inspired by the traditions of the Kazakh steppe.<br>
+    All dishes are prepared in accordance with certified Halal standards.
+    <br><br>
 
-    const chapParaDine = createElement("p", "text-h2-header");
-    chapParaDine.textContent = "Let's Choose";
-    const chapMainDine = createElement("h2", "text-h2");
-    chapMainDine.textContent = "Journey";
+    <i>Steppe Tasting Journey — €150 per guest</i><br><br>
 
-    const textPara = createElement("p", "text");
-    textPara.innerHTML = `At <span class="highlight">AISHOK | KAZAKH CUISINE</span>, 
-    we invite you to immerse yourself in a refined culinary journey that celebrates the 
-    rich heritage of Kazakhstan. <br> Begin with the hearty elegance of our main dishes — 
-    <i>succulent</i> Beshbarmak, <i>aromatically spiced</i> Kuirdak, and <i>delicately steamed</i> 
-    Manti, each prepared using centuries-old techniques that honor the traditions 
-    of the nomadic steppe. <br> Savor the distinctive flavors of our traditional 
-    dairy offerings, from the <i>subtly tart</i> Kumis and <i>crumbly, intensely 
-    flavored</i> Kurt to the <i>golden, airy</i> Baursak, perfect companions to every dish. <br>
-    Conclude with the indulgence of our desserts — <i>rich, velvety</i> Balkaymak and 
-    <i>artisanal, gently spiced</i> Zhent — served alongside <i>bold, exquisitely 
-    brewed</i> Kazakh Tea, a ceremonious finale that captures the warmth, sophistication, 
-    and depth of Kazakh hospitality.`;
+    <b>Main Expressions</b><br>
+    Beshbarmak — <i>tender, slow-simmered</i> meat served with delicate noodles sheets<br>
+    Kuirdak — <i>richly spiced</i> meat with deeply caramelized onions<br>
+    Manti — <i>soft, delicately steamed</i> dumplings filled with seasoned meat<br><br>
 
-    const bookingBtn = createElement("button", "bookingBtn");
-    bookingBtn.textContent = "Proceed with Reservation";
-    bookingBtn.addEventListener("click", () => {
-        window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ", "_blank", "noopener,noreferrer");
-    });
+    <b>Dairy Traditions</b><br>
+    Kumis — <i>lightly effervescent, subtly tart</i> fermented mare's milk<br>
+    Kurt — <i>bold, intensely savory</i> dried curd<br>
+    Baursak — <i>warm, golden, airy</i> fried dough<br><br>
 
+    <b>Final Notes</b><br>
+    Balkaymak — <i>silky, honey-infused</i> cream<br>
+    Zhent — <i>nutty, gently sweet</i> millet dessert<br>
+    Syutpen shay — <i>robust, milk-infused</i> black tea`;
 
-    chapterDine.append(chapParaDine, chapMainDine);
-    textDine.append(textPara, bookingBtn);
-
-
-    content.appendChild(mainContainerDine);
-}   
+    mainContainerDine.appendChild(mainText);
+    content.append(bgContainer, mainContainerDine);
+}

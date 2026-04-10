@@ -1,6 +1,6 @@
 import { createElement } from "./support";
 
-export function contact() {
+export function reserve() {
     const content = document.querySelector('#content');
 
     const mainContainerCont = createElement("div", "main-cont");
@@ -13,7 +13,7 @@ export function contact() {
     const chapMainCont = createElement("h2", "text-h2");
     chapMainCont.textContent = "Enquiry";
 
-    const form = createElement("form");
+    const form = createElement("form", "form-contact");
     form.id = "contactForm";
     form.addEventListener("submit", (e) => {
         e.preventDefault(); //stops submit behavior
@@ -33,6 +33,7 @@ export function contact() {
     nameInput.type = "text";
     nameInput.id = "name";
     nameInput.name = "name";
+    nameInput.autocomplete = "name"
     nameInput.required = true;
 
     const emailLabel = createElement("label");
@@ -42,14 +43,15 @@ export function contact() {
     emailInput.type = "email";
     emailInput.id = "email";
     emailInput.name = "email";
+    emailInput.autocomplete = "email";
     emailInput.required = true;
 
     const selectorLabel = createElement("label");
-    selectorLabel.htmlFor = "enquiry"; // used for screen readers and crawlers
-    selectorLabel.textContent = "Nature of request";
+    selectorLabel.htmlFor = "reservation"; // used for screen readers and crawlers
+    selectorLabel.textContent = "Nature of reservation";
     const selector = createElement("select");
-    selector.id = "enquiry"; // connects label and selector
-    selector.name = "enquiry";
+    selector.id = "reservation"; // connects label and selector
+    selector.name = "reservation";
     selector.required = true;
 
     const selectorPlaceHolder = createElement("option");
@@ -61,10 +63,10 @@ export function contact() {
 
     const options = [
         { text: "Table reservation", value: "table" },
-        { text: "Private venue", value: "venue" },
-        { text: "General enquiry", value: "general" },
-        { text: "Experience sharing", value: "experience" },
-        { text: "Cooperation and Media", value: "coop" }
+        { text: "Private dining / venue hire", value: "private" },
+        { text: "Long-term reservation", value: "long-term" },
+        { text: "Special request / Special occasion", value: "special" },
+
     ]
 
     options.forEach(opt => {
@@ -79,8 +81,8 @@ export function contact() {
     message.name = "message";
     message.maxLength = 200;
     message.rows = 5;
-    message.placeholder = "Share your enquiry here...";
-    message.setAttribute("aria-label", "Share your request");
+    message.placeholder = "Share your reservation details here...";
+    message.setAttribute("aria-label", "Share your reservation details");
 
     const messageBtn = createElement("button");
     messageBtn.textContent = "To share";

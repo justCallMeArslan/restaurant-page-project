@@ -1,20 +1,36 @@
 import "./style.css";
-import { renderFront } from "./components/frontPage";
 import { toMeet } from "./components/toMeet";
 import { toDine } from "./components/toDine";
 import { toVisit } from "./components/toVisit";
-import { contact } from "./components/contact";
 import { footer } from "./components/footer";
+import { enquiry } from "./components/enquiry";
+import { reserve } from "./components/reserve";
+
+const content = document.querySelector("#content");
+
+function clearPage() {
+    content.innerHTML = "";
+}
 
 function renderLanding() {
-    content.innerHTML = "";
-
-    renderFront();
+    clearPage()
     toMeet();
-    toDine();
-    toVisit();
-    contact();
+    enquiry();
     footer();
 }
 
 renderLanding();
+
+function renderMenu() {
+    clearPage();
+    toDine();
+    footer();
+}
+
+function renderReservation() {
+    clearPage();
+    toVisit();
+    reserve();
+    footer();
+}
+

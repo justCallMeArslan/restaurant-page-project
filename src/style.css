@@ -17,6 +17,7 @@
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  font-family: 'Roboto', sans-serif;
 }
 
 img,
@@ -72,6 +73,13 @@ h6 {
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Roboto';
+  src: url("./fonts/roboto/Roboto-Regular.woff2") format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 
 header {
   position: fixed;
@@ -108,7 +116,7 @@ nav {
 }
 
 .navBarList button {
-  background-color: rgb(255, 255, 255, 0.0);
+  background-color: rgba(255, 255, 255, 0);
   color: white;
   border: none;
   border-radius: 3px;
@@ -150,8 +158,28 @@ nav {
   height: 100vh;
 }
 
-.footerCont {
+.footer-cont {
   display: flex;
   justify-content: space-between;
   padding: 20px 10px;
+  width: 100%;
+}
+
+.footer-cont a {
+  color: white;
+  text-decoration: none;
+  font-family: "Macondo", sans-serif;
+}
+
+.footer-cont p {
+  color: white;
+  font-family: "Macondo", sans-serif;
+}
+
+.footer-cont a:hover {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.6);
 }

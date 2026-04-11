@@ -66,7 +66,7 @@ h6 {
 
 @font-face {
   font-family: 'Macondo';
-  src: url("./fonts/Macondo-Regular.woff2") format('woff2');
+  src: url("./fonts/macondo/Macondo-Regular.woff2") format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -126,7 +126,7 @@ nav {
   flex-direction: column;
 }
 
-.bgImgToMeet {
+.bg-img-meet {
   background-image: url('./assets/vase.jpg');
   background-size: cover;
   background-position: center;
@@ -134,8 +134,16 @@ nav {
   height: 100vh;
 }
 
-.bgImgDineVisit {
+.bg-img-dine {
   background-image: url('./assets/yurt.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.bg-img-visit {
+  background-image: url('./assets/reservation.jpg');
   background-size: cover;
   background-position: center;
   width: 100%;

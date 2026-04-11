@@ -4,7 +4,7 @@ export function toMeet() {
    const content = document.querySelector('#content');
 
    const imgContainer = document.createElement('div');
-   imgContainer.classList.add('bgImgToMeet');
+   imgContainer.classList.add('bg-img-meet');
 
    const mainContainer = createElement("div", "main-cont");
    const textHeri = createElement("div", "text-cont")
@@ -31,7 +31,6 @@ export function toMeet() {
    Drawing inspiration from treasured family recipes passed down through generations, 
    she combines meticulous, <i>centuries-old techniques</i> with a modern sensibility, 
    ensuring every dish is both <i>genuine</i> and <i>unforgettable</i>.`;
-
 
    const chapParaJour = createElement("p", "text-h2-header");
    chapParaJour.textContent = "Let's Choose";

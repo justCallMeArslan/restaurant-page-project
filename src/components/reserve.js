@@ -9,9 +9,9 @@ export function reserve() {
     mainContainerCont.append(chapterCont, formCont);
 
     const chapParaCont = createElement("p", "text-h2-header");
-    chapParaCont.textContent = "Let's Connect";
+    chapParaCont.textContent = "Let's Book";
     const chapMainCont = createElement("h2", "text-h2");
-    chapMainCont.textContent = "Enquiry";
+    chapMainCont.textContent = "Reservation";
 
     const form = createElement("form", "form-contact");
     form.id = "contactForm";

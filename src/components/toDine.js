@@ -5,7 +5,7 @@ export function toDine() {
     const mainContainerDine = createElement("div", "main-cont");
     const mainText = createElement("div", "main-dine");
     const bgContainer = document.createElement('div');
-    bgContainer.classList.add('bgImgDineVisit');
+    bgContainer.classList.add('bg-img-dine');
 
     mainText.innerHTML = `
     <span class="highlight">AISHOK | KAZAKH CUISINE</span><br>

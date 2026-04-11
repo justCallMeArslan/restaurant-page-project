@@ -7,7 +7,7 @@ export function toVisit() {
     const textVisit = createElement("div", "text-cont");
     const chapterVisit = createElement("div", "chapter-cont");
     const bgContainer = document.createElement('div');
-    bgContainer.classList.add('bgImgDineVisit');
+    bgContainer.classList.add('bg-img-visit');
 
     mainContainerVisit.append(chapterVisit, textVisit);
 

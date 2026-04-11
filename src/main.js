@@ -8,29 +8,35 @@ import { reserve } from "./components/reserve";
 
 const content = document.querySelector("#content");
 
-function clearPage() {
+function renderPage(funcPage) {
     content.innerHTML = "";
+    funcPage();
+    footer();
 }
 
-function renderLanding() {
-    clearPage()
+function toMeetPage() {
     toMeet();
     enquiry();
-    footer();
 }
 
-renderLanding();
-
-function renderMenu() {
-    clearPage();
+function toDinePage() {
     toDine();
-    footer();
 }
 
-function renderReservation() {
-    clearPage();
+function toReservePage() {
     toVisit();
     reserve();
-    footer();
 }
 
+
+document.querySelector("#meetBtn").addEventListener("click", () => {
+    renderPage(toMeetPage);
+});
+document.querySelector("#dineBtn").addEventListener("click", () => {
+    renderPage(toDinePage);
+});
+document.querySelector("#visitBtn").addEventListener("click", () => {
+    renderPage(toReservePage);
+})
+
+renderPage(toMeetPage);

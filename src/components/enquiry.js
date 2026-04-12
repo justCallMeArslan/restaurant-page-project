@@ -78,7 +78,7 @@ export function enquiry() {
     message.id = "message";
     message.name = "message";
     message.maxLength = 200;
-    message.rows = 5;
+    message.rows = 7;
     message.placeholder = "Share your enquiry here...";
     message.setAttribute("aria-label", "Share your enquiry");
 

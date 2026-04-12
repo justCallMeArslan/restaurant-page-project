@@ -99,6 +99,9 @@ header {
   background: rgba(0, 0, 0, 0.5);
   z-index: 10;
 }
+ul {
+  list-style-type: none;
+}
 
 h2 {
   font-family: "Macondo", sans-serif;
@@ -245,6 +248,10 @@ span {
 
 label {
   padding: 3px;
+}
+
+input {
+  height: 25px;
 }
 
 .submitBtn {

@@ -17,16 +17,16 @@ export function toVisit() {
     chapMainVisit.textContent = "Destination";
 
 
-    const mapLink = document.createElement('img');
+    const mapLink = document.createElement('img', "location-img");
     mapLink.src = imgLink;
     mapLink.style.cursor = "pointer";
     mapLink.title = "Click to view on Google Maps";
     mapLink.addEventListener('click', () => {
         window.open("https://maps.app.goo.gl/ttvpc5hBb7ieWWWL6", "_blank");
     })
-    const mapLinkCaption = document.createElement("span");
+    const mapLinkCaption = document.createElement("span", "caption");
     mapLinkCaption.innerHTML = `Address: Staroměstské nám. 609/9, 110 00 Staré 
-    Město, Czechia <br> Phone: +420 123 454 321 <br> Email: aishok.cuisine@business.com`;
+    Město, Czechia, Phone: +420 123 454 321, Email: aishok.cuisine@business.com`;
 
     textVisit.append(mapLink, mapLinkCaption);
     chapterVisit.append(chapParaVisit, chapMainVisit);

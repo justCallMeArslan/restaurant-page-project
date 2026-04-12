@@ -29,7 +29,7 @@ export function reserve() {
     const nameLabel = createElement("label");
     nameLabel.htmlFor = "name";
     nameLabel.textContent = "Name"
-    const nameInput = createElement("input");
+    const nameInput = createElement("input", "form-reserv");
     nameInput.type = "text";
     nameInput.id = "name";
     nameInput.name = "name";
@@ -39,7 +39,7 @@ export function reserve() {
     const emailLabel = createElement("label");
     emailLabel.htmlFor = "email";
     emailLabel.textContent = "Email"
-    const emailInput = createElement("input");
+    const emailInput = createElement("input", "form-reserv");
     emailInput.type = "email";
     emailInput.id = "email";
     emailInput.name = "email";
@@ -49,12 +49,12 @@ export function reserve() {
     const selectorLabel = createElement("label");
     selectorLabel.htmlFor = "reservation"; // used for screen readers and crawlers
     selectorLabel.textContent = "Nature of reservation";
-    const selector = createElement("select");
+    const selector = createElement("select", "form-reserv");
     selector.id = "reservation"; // connects label and selector
     selector.name = "reservation";
     selector.required = true;
 
-    const selectorPlaceHolder = createElement("option");
+    const selectorPlaceHolder = createElement("option", "form-reserv");
     selectorPlaceHolder.textContent = "Please, select an option:";
     selectorPlaceHolder.disabled = true;
     selectorPlaceHolder.selected = true;
@@ -76,15 +76,15 @@ export function reserve() {
         selector.appendChild(option);
     });
 
-    const message = createElement('textarea');
+    const message = createElement('textarea', "form-reserv");
     message.id = "message";
     message.name = "message";
-    message.maxLength = 200;
+    message.maxLength = 250;
     message.rows = 5;
     message.placeholder = "Share your reservation details here...";
     message.setAttribute("aria-label", "Share your reservation details");
 
-    const messageBtn = createElement("button");
+    const messageBtn = createElement("button", "submitBtn");
     messageBtn.textContent = "To share";
     messageBtn.type = "submit";
 

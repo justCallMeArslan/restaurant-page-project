@@ -18,6 +18,8 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   font-family: 'Roboto', sans-serif;
+  background-color: #faf8f3;
+  color: #0f0f0ec6;
 }
 
 img,
@@ -81,6 +83,14 @@ h6 {
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Roboto';
+  src: url("./fonts/roboto/Roboto-Italic.woff2") format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -92,7 +102,9 @@ header {
 
 h2 {
   font-family: "Macondo", sans-serif;
-  font-size: 50px;
+  font-size: 70px;
+  color: black;
+  line-height: 1.2;
 }
 
 .highlight {
@@ -132,6 +144,13 @@ nav {
 .form-contact {
   display: flex;
   flex-direction: column;
+  font-size: 14px;
+}
+
+.form-reserv {
+  background-color: #faf8f3;
+  color: #0f0f0ec6;
+  border: 1px solid #978b6e;
 }
 
 .bg-img-meet {
@@ -145,9 +164,9 @@ nav {
 .bg-img-dine {
   background-image: url('./assets/yurt.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   width: 100%;
-  height: 100vh;
+  height: 45vh;
 }
 
 .bg-img-visit {
@@ -155,7 +174,7 @@ nav {
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: 100vh;
+  height: 56.2vh;
 }
 
 .footer-cont {
@@ -174,7 +193,7 @@ nav {
 .footer-cont p {
   color: white;
   font-family: "Macondo", sans-serif;
-  font-size: 20px;
+  font-size: 12px;
 }
 
 .footer-cont a:hover {
@@ -182,5 +201,56 @@ nav {
 }
 
 footer {
-  background-color: rgba(0, 0, 0, 0.6);
+  margin-top: 85px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.main-dine {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.main-cont {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: start;
+  align-content: center;
+  justify-content: center;
+  gap: 100px;
+  padding: 100px 100px 12px 100px;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+
+.text-h2-header {
+  color: #cab98f;
+  line-height: 1;
+  font-size: 14px;
+}
+
+.text-cont img {
+  border: 1px solid #978b6e;
+  border-radius: 6px;
+}
+
+span {
+  color: #978b6e;
+  font-size: 11px;
+}
+
+label {
+  padding: 3px;
+}
+
+.submitBtn {
+  background-color: rgba(0, 0, 0, 0.7);
+  font-family: "Macondo", sans-serif;
+  color: white;
+  font-size: 18px;
+  margin-top: 10px;
 }

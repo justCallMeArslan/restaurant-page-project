@@ -6,12 +6,14 @@ export function toMeet() {
    const imgContainer = document.createElement('div');
    imgContainer.classList.add('bg-img-meet');
 
-   const mainContainer = createElement("div", "main-cont");
+   const mainContainerHeri = createElement("div", "main-cont");
+   const mainContainerJour = createElement("div", "main-cont");
    const textHeri = createElement("div", "text-cont")
    const chapterHeri = createElement("div", "chapter-cont");
    const textJour = createElement("div", "text-cont")
    const chapterJour = createElement("div", "chapter-cont");
-   mainContainer.append(imgContainer, chapterHeri, textHeri, chapterJour, textJour);
+   mainContainerHeri.append(chapterHeri, textHeri);
+   mainContainerJour.append(chapterJour, textJour);
 
    const chapParaHeri = createElement("p", "text-h2-header");
    chapParaHeri.textContent = "Let's Meet";
@@ -39,12 +41,12 @@ export function toMeet() {
    const textParaJour = createElement("p", "text");
    textParaJour.innerHTML = `At <span class="highlight">AISHOK | KAZAKH CUISINE</span>, 
     we invite you to immerse yourself in a refined culinary journey that celebrates the 
-    rich heritage of Kazakhstan. <br> Begin with the hearty elegance of our main dishes — 
+    rich heritage of Kazakhstan. <br><br> Begin with the hearty elegance of our main dishes — 
     <i>succulent</i> Beshbarmak, <i>aromatically spiced</i> Kuirdak, and <i>delicately steamed</i> 
     Manti, each prepared using centuries-old techniques that honor the traditions 
-    of the nomadic steppe. <br> Savor the distinctive flavors of our traditional 
+    of the nomadic steppe. <br><br> Savor the distinctive flavors of our traditional 
     dairy offerings, from the <i>subtly tart</i> Kumis and <i>crumbly, intensely 
-    flavored</i> Kurt to the <i>golden, airy</i> Baursak, perfect companions to every dish. <br>
+    flavored</i> Kurt to the <i>golden, airy</i> Baursak, perfect companions to every dish. <br><br>
     Conclude with the indulgence of our desserts — <i>rich, velvety</i> Balkaymak and 
     <i>artisanal, gently spiced</i> Zhent — served alongside <i>bold, exquisitely 
     brewed</i> Kazakh Tea, a ceremonious finale that captures the warmth, sophistication, 
@@ -55,7 +57,7 @@ export function toMeet() {
    chapterJour.append(chapParaJour, chapMainJour);
    textJour.append(textParaJour);
 
-   content.appendChild(mainContainer);
+   content.append(imgContainer, mainContainerHeri, mainContainerJour);
 
 }
 

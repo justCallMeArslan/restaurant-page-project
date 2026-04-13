@@ -80,7 +80,7 @@ export function reserve() {
     message.id = "message";
     message.name = "message";
     message.maxLength = 250;
-    message.rows = 7;
+    message.rows = 9;
     message.placeholder = "Share your reservation details here...";
     message.setAttribute("aria-label", "Share your reservation details");
 
